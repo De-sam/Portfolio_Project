@@ -63,21 +63,44 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: red;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: gold;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: blue;
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: orange;
+}
+
+.sec5{
+    display: none;
+    transform: translateY(0) scale(1);
+    background-color: purple;
+}
+
+.active{
+    display: block;
+    animation: scaleAnim is ease-in-out ;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scale(0)
+        }
+        100%{
+            transform: translateY(-100%) scale(0)
+        }
+    }
 }
 
 // controls
@@ -116,9 +139,4 @@ section{
             pointer-events: none;
         }
     }
-}
-
-.sec5{
-    display: none;
-    transform: translateY(0) scale(1);
 }
